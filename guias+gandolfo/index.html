@@ -3,80 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icon.ico">
+
+      <!-- Bootstrap CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+
     <title>Guias Bilzu</title>
 </head>
-
-    <header class="header">
-        <div>
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="campeones.html">Campeones</a></li>
-                    <li><a href="guias.html">Guias</a>
-                <ul class="submenu">
-                    <li><a href="guias.html">TOP</a></li>
-                    <li><a href="guias.html">JUNGLA</a></li>
-                    <li><a href="guias.html">MID</a></li>
-                    <li><a href="guias.html">ADC</a></li>
-                    <li><a href="guias.html">SUPPORT</a></li>
-                </ul>
-                </li>
-                <li><a href="ranking.html">Ranking</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+<body>
+     <!-- nav-->
+    <header class="container-fluid header">
+        <div class="row">
+            <nav class="col-12 navbar navbar-expand-lg navbar-light">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="campeones.html">Campeones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guias.html">Guias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking.html">Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </nav>
         </div>
      </header>
-<body class="gridBody">
+     <!-- Banner -->
+     <div class="bannerBox">
+        <div class="imgBanner">
+          <h2 class="textBanner">Guias Sehra</h2>
+        </div>
+      </div>
 
-<h1 class="main">Guias de Bilzu</h1>
-    <section class="seccion">
-        <article class="info">
-            <p class="prim">Aca vas a encontrar todo tipo de guias y ayudas creadas por la comunidad para mejorar tu jugabilidad
-            </p>
-                <h2 class="first">Guia de Objetos</h2>
-            <p class="seco">Gracias a nuestra extensa base de Datos armamos las mejores combinaciones para un mejor rendimiento
-            </p>
-                <h2 class="sub">Acceso rapido a Roles</h2>
-                    <div class="container">
-                    <div class=" ">
-                        <img src="img/jax.jpg" alt="" height="200px" width="250px">
-                            </div>
-                    <div class="jungle">
-                        <img src="img/shaco.jpg" alt="" height="200px" width="250px">
-                            </div>
-                    <div class="mid">
-                        <img src="img/viktor.jpg" alt="" height="200px" width="250px">
-                            </div>
-                    <div class="adc">
-                        <img src="img/vayne.jpg" alt="" height="200px" width="250px">
-                            </div>
-                    <div class="sup">
-                        <img src="img/soraka.jpg" alt="" height="200px" width="250px">
-                            </div>
-                            </div>
-                    <div class="video">
-                        <h3 class="third">Video de Inicio de Temporada</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mDYqT0_9VR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-        </article>
-    </section>
-<footer class="pie">
-        Contacto
-        <div>
-            <link><a href="nachingast@gmail.com">Email</a></link>     
+      
+    <div class="container">
+        <h2 class="textoNombreDeSeccion">Roles y Posiciones</h2>
+        <div class="row row-cols-12 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/jax.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Campeones TOP</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">Ranking</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/shaco.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Campeones Jungla</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">Ranking</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/viktor.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Campeones MID</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">Ranking</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/vayne.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Campeones ADC</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">Ranking</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/soraka.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Campeones Support</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">Ranking</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/luden.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">OBJETOS</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">Builds</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/dragon.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Dragones</h3>
+                <h3 class="card-subtitle text-center textPrice">Guias</h3>
+                <h4 class="text-center textExtra">TOP</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-4">
+            <div class="card">
+              <img
+                src="img/ward.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title text-center textPlace">Wards</h3>
+                <h3 class="card-subtitle text-center textPrice">Vision</h3>
+                <h4 class="text-center textExtra">Donde wardear</h4>
+              </div>
+            </div>
+          </div>
+          
+
+                    
+           <!-- Footer -->
+    <footer class="container-fluid footer">
+      <div class="row d-flex justify-content-center mb-5">
+        <div class="col-12">
+          <h4 class="footer__subscribe d-flex justify-content-center">
+            Enterate de las actualizaciones
+          </h4>
         </div>
-        <div>
-            <link><a href="https://facebook.com">Facebook</a></link>
-        <div>
-        Copyright - 2022
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ingresá tu email"
+            />
+          </div>
+          <div class="col-6">
+            <button
+              class="btn btn-primary ml-2 d-flex justify-content-center footer__submit"
+              type="submit"
+            >
+              Suscribirme
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-6 d-flex justify-content-center">
+          <h4 class="footer__text--style">Contacto</h4>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <h4 class="footer__text--style">¡Seguinos!</h4>
+        </div>
+      </div>
     </footer>
+    <!-- Fin footer -->
+          <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
  </body>
 </html>

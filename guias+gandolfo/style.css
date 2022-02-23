@@ -1,140 +1,119 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-@media only screen and (min-width: 600px){
-	
-}
-@media only screen and (min-width: 768px){
+body {
+	font-family: "Oxygen", sans-serif;
+	color: black;
+  }
+   /* MEDIA QUERIES */
 
-}
-@media only screen and (min-width: 1024px){
-	
-}
-.gridBody{
-	display: grid;
-	grid-template-columns: 5;
-	background-image: url(img/wallpaper.jpg);
-    background-position: cover;
-    background-repeat: no-repeat;
-    width: auto;
-}
-.navegacion{
-	margin-bottom: 50px;
-	width: 100%;
+@media (min-width: 576px) {
+	.footer__subscribe {
+	  font-size: 1.4rem;
+	}
+	.footer__text--style {
+	  font-size: 1rem;
+	}
+	.featured__title {
+	  font-size: 1.7rem;
+	}
+  }
+  
+  @media (min-width: 768px) {
+	.banner__text {
+	  font-size: 2.3rem;
+	}
+	.featured {
+	  padding: 5rem;
+	}
+	.featured__title {
+	  font-size: 1.9rem;
+	}
+  }
+  
+  @media (min-width: 992px) {
+	.footer {
+	  padding: 2rem 20rem;
+	}
+  }
+  
+  @media (min-width: 1200px) {
+	.featured {
+	  padding: 0 8rem;
+	}
+  }
+  /* NavBar */
+  .navCustomized {
+	height: 6rem;
+  }
+  .navCustomized a {
+	color: black;
+  }
+  
+  .imgBanner {
+	background-image: url(../img/bannerBlur1920x350.jpg);
 	background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
-.menu{
-    text-align: center;
-}
-.navegacion ul{
-	list-style: none;
-}
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color:blanchedalmond;
-	text-decoration: none;
-}
-.menu li a:hover{
-	color: white;
-}
-.submenu{
-	position: absolute;
-	background: black;
-	width: 120%;
-	display: none;
-}
-.submenu li a{
-	display: block;
-	padding: 15px;
-	color: #fff;
-	text-decoration: none;
-}
-.menu li:hover .submenu{
-	display: block;
-}
-.main{
-    text-align: center;
-	color: white;
-    size: 70px;
-    margin-bottom: 20px;
-	font-size: 50px;
-	border: 20px;
-	
-}
-.info{
-	text-align: center;
-	color: white;
-	font-family: 'Dongle', sans-serif;
-}
-.prim{
-	text-align: center;
-	color: white;
-	margin-bottom: 20px;
-	font-size: 40px;
-	font-family: 'Dongle', sans-serif;
-}
-.container{
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: center;
-	justify-content: space-around;
-}
-.first{
-	text-align: left;
-	color: tomato;
-	font-size: 40px;
-	font-family: 'Dongle', sans-serif;
-}
-.seco{
-	text-align: left;
-	color: tomato;
-	font-size: 20px;
-	font-family: 'Dongle', sans-serif;
-}
-.sub{
-text-align: center;
-margin-top: 30px;
-margin-bottom: 50px;
-color: white;
-font-size: 35px;
-text-decoration: underline;
-}
-.third{
-	display: flex;
-	align-content: center;
 	justify-content: center;
+	align-items: center;
+  }
+  .textBanner {
+	font-size: 50px;
+	font-weight: 700;
+	padding: 0.7rem;
 	text-align: center;
-	font-size: 30px;
-	margin-top: 100px;
-}
-.frame{
-	margin-left: 2%;
-	margin-top: 15px;
-}
-.campFlex{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.397);
+  }
+  /* Sección */
+  .textoNombreDeSeccion {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: center;
-	justify-content: space-around;
-
-}
-.pie{
-	color: blanchedalmond;
-	padding: 50px;
+	justify-content: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 2rem 0;
+  }
+  /* Cards */
+  
+  .textPlace {
+	font-size: 25px;
+	font-weight: 700;
 	text-align: center;
+  }
+  .textPrice {
+	font-size: 25px;
+	font-weight: 400;
+	text-align: center;
+	color: blue;
+  }
+  
+  .textExtra {
 	font-size: 20px;
-	font-family: 'Dongle', sans-serif;
-}
+	font-weight: 300;
+	text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+	background-color: rgb(248, 249, 250);
+	height: 10rem;
+	
+  }
+  
+  .form-control {
+	width: 30%;
+  }
+  .textFooter {
+	font-size: 20px;
+  }
+  .btn {
+	background-color: blue;
+	color: white;
+  }
+  .social h4 {
+	font-size: 15px;
+  }
+  
+  

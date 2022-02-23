@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+  .footer__subscribe {
+    font-size: 1.4rem;
+  }
+  .footer__text--style {
+    font-size: 1rem;
+  }
+  .featured__title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__text {
+    font-size: 2.3rem;
+  }
+  .featured {
+    padding: 5rem;
+  }
+  .featured__title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding: 2rem 20rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featured {
+    padding: 0 8rem;
+  }
+}
+
+  body {
+    font-family: "Oxygen", sans-serif;
+    color: black;
+    background-color:antiquewhite;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 5rem;
+  }
+  a {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  a:hover {
+    color: grey;
+  }
+  
+  .navStyle {
+    background-color: white;
+    height: 5rem;
+  }
+  .imgBanner {
+    background-image: url(../img/bannerBlur1920x350.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bannerPrincipal {
+    width: 100%;
+    height: 350px;
+    background-color: firebrick;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+  }
+  
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0.6rem;
+  }
+  /* Home */
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    color: black;
+  }
+  .banners {
+    width: 100%;
+  }
+  .textoBanner {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0.7rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+  }
+  @keyframes animacion {
+    0% {
+      color: white;
+    }
+    50% {
+      color: rgb(243, 245, 138);
+    }
+    100% {
+      color: white;
+    }
+  }
+  .animationText {
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .textoNombreDeSeccion {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+  .boxGeneral {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+  .allCardsBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .cardBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0.5rem;
+    border: 0.1rem solid black;
+    width: 20%;
+    height: 500px;
+  }
+  .textoBox {
+    margin-top: 1rem;
+  }
+  .textoLugar {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .textoPrecio {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: blue;
+  }
+  
+  .textoExtra {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+  /* Nosotros */
+  .bannerImg {
+    background-image: url(../img/banner11920x350-nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+  }
+  .pastillasBox {
+    display: flex;
+    justify-content: center;
+  }
+  .pastillaBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 3rem;
+    width: 25%;
+  }
+  
+  .pastillaBox img {
+    width: auto;
+  }
+  
+  .pastillaBox img:hover {
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.1);
+  }
+  .textoPrincipalPastilla {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .textoSecundarioPastilla {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .integrantesBox {
+    display: flex;
+    justify-content: center;
+  }
+  .integrantesBox img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .integrantesIzq {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-right: 8rem;
+  }
+  .integrantesDer {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-left: 8rem;
+  }
+  /* Contacto */
+  .bannerContacto {
+    background-image: url(../img/banner-contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  .sectionContactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .upperBox {
+    display: flex;
+  }
+  
+  form {
+    width: 50%;
+    display: inline-block;
+    margin: 1rem 0;
+  }
+  .formContact {
+    font-size: 20px;
+  }
+  label {
+    margin: 1rem 0;
+  }
+  
+  input {
+    margin: 1rem 0;
+  }
+  .contactoDatos {
+    border: 1px solid black;
+    height: 400px;
+  }
+  .nombreDato {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+  
+  .dato {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(245, 245, 233);
+  }
+  .footerBox p {
+    text-align: center;
+  }
+  .mediosDePago {
+    width: 50%;
+  }
+  .mediosDePago img {
+    width: 20%;
+    justify-content: center;
+  }
+  .redes {
+    width: 50%;
+  }
+  
+  .redesYPagosBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .bannerArmaTuViaje {
+    background-image: url(../img/banner-armatuviaje.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+  }
+  .bannerPaquetes {
+    background-image: url(../img/banner-paquetes.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+  }
+  
+  /* Armá tu viaje */
+  
+  #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 10% 5% 10%;
+    padding: 2%;
+    border: 0.1rem solid black;
+  }
+  #container h2 {
+    font-size: 25px;
+  }
+  .boxLeft,
+  .boxRight {
+    width: 40%;
+  }
+  .boxRight {
+    font-size: 20px;
+  }
+  .budget,
+  .percentages,
+  .trip,
+  .weather,
+  .kindOfPlace,
+  .interests {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 0;
+    font-size: 20px;
+  }
+  
+  .optionBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .verticalBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1.5rem 2rem 0;
+  }
+  
+  .horizontalBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .optionsMargin {
+    display: flex;
+    margin: 2rem 1.5rem 2rem 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  .optionsMargin input {
+    margin: 0 1rem;
+  }
+  
+  .topic {
+    font-weight: 700;
+  }
+  .verticalBoxContact {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
+  .sendDelete {
+    display: flex;
+  }
+  
